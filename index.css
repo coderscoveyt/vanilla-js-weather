@@ -1,0 +1,71 @@
+/* Normalise */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2d2b2b;
+  color: #eee;
+}
+
+::selection {
+  color: black;
+  background-color: yellow;
+}
+
+header, h1 { font-family: sans-serif; }
+header { padding: 1rem; }
+h1 { text-align: center; }
+
+/* Styles */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.search > label { font-size: 1.5rem; }
+.search > input { padding: 0.25rem; width: 200px; }
+
+.error-container {
+  position: relative;
+  background-color: #da8787;
+  color: black;
+  padding: 1rem;
+  max-width: 75%;
+  margin: 0.5rem auto;
+  border-radius: 0.5rem;
+}
+
+.error-close-btn {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.main-item {
+  max-width: 60%;
+  margin: 0.5rem auto;
+  color: #1a1a1a;
+  background-color: #566c87;
+  border-radius: 1rem;
+}
+
+.condition-block { text-align: center; margin-bottom: 0.5rem; }
+.condition-block > img { height: 100px; width: 100px; }
+.condition-block > p { font-size: 1.75rem; }
+
+
+.temperature-block { font-size: 1.25rem; text-align: center; }
+
+.wind-block { text-align: center; font-size: 1.25rem; padding-bottom: 1rem; }
+
+.location-block { font-size: 1.5rem; text-align: center; margin-bottom: 0.5rem; }
